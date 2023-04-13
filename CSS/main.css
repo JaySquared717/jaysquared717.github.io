@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+h1 {
+    color:white;
+    text-align:center;
+}
+
+body {
+    background-color:#ED4818;
+}
+
+h2 {
+    color:white;
+}
+
+h3 {
+    font-size:40px;
+    text-align:center;
+}
+
+img.home {
+    border:15px;
+    border-image-outset:#707070;
+}
+
+img.games {
+    float:right;
+    width:185px;
+    height:261px;
+}
+
+div.home {
+    border:2px;
+    color:"solid black";
+    margin:20px 100px;
+    padding:15px 5px;
+    text-align:center;
+    background-color:white;
+    border-radius:20px;
+}
+
+a.gamelink {
+    text-align:right;
+}
+
+div.about {
+    border-width:2px;
+    border-style:solid;
+    margin:20px;
+    padding:15px;
+    border-color:black;
+    border-radius:20px;
+    text-align:center;
+    background-color:ghostwhite;
+}
+</html>
