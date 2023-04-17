@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
-
 h1 {
     color:white;
     text-align:center;
@@ -16,8 +7,41 @@ body {
     background-color:#ED4818;
 }
 
-h2 {
-    color:white;
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 150px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #CB3C13;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* Style the links inside the sidebar */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    color: beige;
+    display: block;
+}
+
+/* Change the color of links on hover */
+.sidenav a:hover {
+  background-color: #003891;
+}
+
+/* Add a background color on active links */
+.sidenav a.active {
+  color: white;
+}
+
+.content {
+    margin-left: 150px;
+    padding-left: 10px;
 }
 
 h3 {
@@ -26,8 +50,8 @@ h3 {
 }
 
 img.home {
-    border:15px;
-    border-image-outset:#707070;
+    border: 15px outset #707070;
+    float: right
 }
 
 img.games {
@@ -36,28 +60,55 @@ img.games {
     height:261px;
 }
 
-div.home {
-    border:2px;
-    color:"solid black";
-    margin:20px 100px;
-    padding:15px 5px;
-    text-align:center;
-    background-color:white;
-    border-radius:20px;
+img.characthers {
+    width: auto;
+    max-height: 400px;
 }
 
-a.gamelink {
-    text-align:right;
+div.home {
+    border-width:2px;
+    border-style:solid;
+    margin:15px;
+    padding:15px;
+    border-color:black;
+    border-radius:20px;
+    margin-right: 350px;
 }
 
 div.about {
     border-width:2px;
     border-style:solid;
-    margin:20px;
+    margin:15px;
+    padding:10px;
+    border-color:black;
+    border-radius:20px;
+}
+
+div.games {
+    border-width:2px;
+    border-style:solid;
+    margin:15px;
     padding:15px;
     border-color:black;
     border-radius:20px;
-    text-align:center;
-    background-color:ghostwhite;
+    margin-right: 200px;
+    margin-left: 550px;
+    align-content: center;
 }
-</html>
+
+p.characthers {
+    border-width:2px;
+    border-style:solid;
+    margin-right:115px;
+    padding:10px;
+    border-color:black;
+    border-radius:20px;
+    margin-left: inherit;
+    margin-right: inherit;
+}
+
+a.gamelink {
+    font-size: 30px;
+    padding-right: 20px;
+    padding-top: 15px;
+}
