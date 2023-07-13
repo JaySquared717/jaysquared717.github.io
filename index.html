@@ -1,3 +1,33 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="start-screen">
+    <button id="enter-btn">Enter Site</button>
+    <div id="smoke-effect"></div>
+  </div>
+
+  <script>
+    const enterButton = document.getElementById('enter-btn');
+    const smokeEffect = document.getElementById('smoke-effect');
+
+    enterButton.addEventListener('click', () => {
+      smokeEffect.style.pointerEvents = 'auto';
+      smokeEffect.style.animation = 'smokeAnimation 5s ease-in-out forwards';
+
+      setTimeout(() => {
+        window.location.href = 'port-home.html';
+      }, 5000); // Adjust the delay time (in milliseconds) based on your animation duration
+    });
+  </script>
+</body>
+=======
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -30,4 +60,5 @@
       <p>Unlike previous games in the series which were mostly single-player-only games, All 4 One focuses on a four-player cooperative multiplayer mode which allows for drop-in and drop-out online as well as offline multiplayer. Players can each take the role of one of the four main characters of the game, namely Ratchet, Clank, Qwark and Doctor Nefarious.</p>
     </div>
   </body>
+>>>>>>> 5701409306f9c955b3031bf6cca2fb01e3a9377c
 </html>
