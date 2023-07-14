@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Website</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="start-screen">
-    <button id="enter-btn">Enter Site</button>
-    <div id="smoke-effect"></div>
-  </div>
-
-  <script>
-    const enterButton = document.getElementById('enter-btn');
-    const smokeEffect = document.getElementById('smoke-effect');
-
-    enterButton.addEventListener('click', () => {
-      smokeEffect.style.pointerEvents = 'auto';
-      smokeEffect.style.animation = 'smokeAnimation 5s ease-in-out forwards';
-
-      setTimeout(() => {
-        window.location.href = 'port-home.html';
-      }, 5000); // Adjust the delay time (in milliseconds) based on your animation duration
-    });
-  </script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Website</title>
+        <link rel="stylesheet" href="main.css">
+        <script>
+            document.getElementById("enter-button").addEventListener("click", function() {document.querySelector(".starter-screen").classList.add("fade-out");setTimeout(function() {window.location.href = "port-home.html";}, 1000); // Adjust the timeout value to match the duration of the fade-out animation
+  });
+        </script>
+    </head>
+    <body>
+        <div class="starter-screen">
+            <h1>Welcome to My Website</h1>
+            <button id="enter-button" onclick="location.href='port-home.html'">Enter Site</button>
+        </div>
+    </body>
 </html>
